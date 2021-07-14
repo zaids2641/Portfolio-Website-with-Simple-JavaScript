@@ -377,7 +377,7 @@ nav ul li a:hover {
     width: 115px;
     flex: 1;
     justify-content: space-between;
-    margin: 0 auto;
+    margin: 1.8rem auto;
 }
 .socials a{
     padding: 0.4em;
@@ -521,11 +521,12 @@ nav ul li a:hover {
     border-bottom-right-radius: 3px;
 }
 .profile p {
-    margin: 0.3rem auto;
+    margin: -2rem auto;
     padding: 0.6rem;
     width: 210px;
     font-size: .9rem;
     font-weight: 400 !important;
+    text-align: center;
 }
 .profile .profile-image {
     position: relative;
@@ -680,6 +681,10 @@ footer .grid-2 div:nth-child(1) small a {
     .profile p {
         font-size: .9rem !important;
         width: 196px;
+        margin: -1rem auto;
+    }
+    .socials {
+        margin: 0.8rem auto;
     }
     .toggle-menu  {
         display: block !important;
