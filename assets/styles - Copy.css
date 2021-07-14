@@ -3,14 +3,8 @@
      ==================== Defaults =====================
     =====================================================
 */
-
-::-webkit-scrollbar {
-    width: 0;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
-}
-/* Optional: show position indicator in red */
-::-webkit-scrollbar-thumb {
-    background: #FF0000;
+html {
+    scroll-behavior: smooth;
 }
 *:focus {
     outline: 0 !important;
@@ -19,9 +13,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-html {
-    scroll-behavior: smooth;
 }
 main {
     width: 100%;
@@ -34,11 +25,6 @@ footer {
 }
 .row {
     padding: 15px;
-}
-
-.container {
-    height: 100vh;
-    overflow: auto;
 }
 
 .border-light-1 {
@@ -204,11 +190,10 @@ section:nth-child(even) {
 }
 
 /* Scroll Effects */
-.scrolled {
-    background:rgb(253, 253, 253);
-    -webkit-box-shadow: 0px 2px 12px -5px #000000; 
-    box-shadow: 0px 2px 12px -5px #000000;
+.textScrollStyle a, .toggle-button i, .brandScrollStyle h1, .navLinkScrollStyle li a, .sideSocialsStyle a {
+    color: rgb(68, 68, 68) !important;
 }
+
 .box-shadow-1 {    
     -webkit-box-shadow: 0px 2px 12px -5px #000000; 
     box-shadow: 0px 2px 12px -5px #000000;
@@ -247,16 +232,12 @@ section:nth-child(even) {
      =================== Default Size ==================
     =====================================================
 */
-.toggle-menu button{
+.nav-items li a, .toggle-menu button{
     font-size: 1.2rem !important;    
-}
-.nav-items .menu-link, .side-menu-items .menu-link {
-    font-size: 1rem;
 }
 .brand > h1 > span {
     font-size: 1.6rem !important;    
 }
-
 /* Image */
 .img-full-width {
     width: 100%;
@@ -309,7 +290,7 @@ display: grid;
 grid-template-columns: 2fr 2fr;
 }
 .grid-4 .card {
-    margin: 5%;
+    margin: 3%;
 }
 
 @media screen and (max-width: 992px) {
@@ -330,9 +311,6 @@ grid-template-columns: 2fr 2fr;
         }
     .grid-2 {   
         grid-template-columns: 2fr;
-    }
-    .card-content {
-        height: 295px;
     }
   }
 
@@ -369,6 +347,11 @@ nav ul li a:hover {
 }
 .nav-items li a {
     text-decoration: none;
+}
+.scrolled {
+    background:rgb(253, 253, 253) !important;
+    -webkit-box-shadow: 0px 2px 12px -5px #000000; 
+    box-shadow: 0px 2px 12px -5px #000000;
 }
 .socials {
     display: flex;
@@ -408,6 +391,7 @@ nav ul li a:hover {
 }
 .side-menu-content {
     position: absolute;
+    background: rgb(17, 17, 17);
     border-bottom-left-radius: 3px;
     border-top-left-radius: 3px;
     height: 355px;
@@ -419,6 +403,7 @@ nav ul li a:hover {
 .side-menu-content .side-menu-items li {
     list-style: none;
     text-align: center;
+    font-size: 1.1rem;
     line-height: 1.8rem;
 }
 .side-menu-content .side-menu-items li a {
@@ -474,6 +459,13 @@ nav ul li a:hover {
     right: 10rem;
     z-index: 999;
 }
+.sideMenuScrollStyle-1 {
+    background:rgb(252, 251, 251);
+    color: whitesmoke !important;
+}
+.sideMenuItemsText li a  {
+    color: rgb(24, 24, 24)
+}
 
 
 /* 
@@ -492,7 +484,6 @@ nav ul li a:hover {
 }
 .profile {
     z-index: 2;
-    width: 50%;
 }
 .profile h1 {
     text-align: center;
@@ -627,8 +618,6 @@ textarea {
 
 /* Footer */
 footer .grid-2 div {
-    display: flex;
-    justify-content: center;
     color: rgb(68, 68, 68);
 }
 
@@ -683,8 +672,5 @@ footer .grid-2 div:nth-child(1) small a {
     }
     form {
         width: 100%;
-    }
-    footer .grid-2 div small {
-        margin-top: .3rem;
     }
   }

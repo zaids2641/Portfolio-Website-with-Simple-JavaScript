@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebDesign</title>
 
+    <script src="/assets/code.jquery.com/jquery-2.2.4.min.js"></script>
     <link rel="stylesheet" href="/assets/font-awesome-4.7.0/css/font-awesome.min.css" />
     <link type="text/css" rel="stylesheet" href="assets/styles.css" />
 </head>
@@ -13,41 +14,41 @@
     <section id="home">
         <header>
             <nav class="navbar tranx-3">
-                <div class="brand" id="brand">
-                    <h1 class="font-color-light-1 tranx-3"><span>PortFolio</span></h1>
+                <div class="brand">
+                    <h1 class="brand-text font-color-light-1 tranx-3"><span>PortFolio</span></h1>
                 </div>
-                <ul class="nav-items" id="nav-items">
-                    <li class="nav-litem"><a class="font-color-light-1 tranx-3" href="#home">Home</a></li>
-                    <li class="nav-litem"><a class="font-color-light-1 tranx-3" href="#projects">Projects</a></li>
-                    <li class="nav-litem"><a class="font-color-light-1 tranx-3" href="#about">About Me</a></li>
-                    <li class="nav-litem"><a class="font-color-light-1 tranx-3" href="#contact">Contact</a></li>
+                <ul class="nav-items">
+                    <li class="nav-litem"><a class="font-color-light-1 menu-link tranx-3" href="#home">Home</a></li>
+                    <li class="nav-litem"><a class="font-color-light-1 menu-link tranx-3" href="#projects">Projects</a></li>
+                    <li class="nav-litem"><a class="font-color-light-1 menu-link tranx-3" href="#aboutme">About Me</a></li>
+                    <li class="nav-litem"><a class="font-color-light-1 menu-link tranx-3" href="#contact">Contact</a></li>
                 </ul>
 
                 <div class="toggle-menu">
-                    <button type="button" class="dropBtn" id="toggle-menu-button" onClick="dropdownToggle()"><i class="font-color-light-1 fa fa-bars tranx-3" aria-hidden="true"></i></button></li>                    
+                    <button type="button" class="dropBtn" onClick="dropdownToggle()"><i class="font-color-light-1 fa fa-bars tranx-3" aria-hidden="true"></i></button></li>                    
                 </div>
             </nav>
 
         </header>
                 <div class="side-menu" id="side-menu">
-                    <div class="side-menu-content tranx-3" id="side-menu-content">
-                        <ul class="side-menu-items" id="side-menu-items">
-                            <li class="nav-litem"><a class="font-color-light-1 tranx-3" id="scrolled-xf" onClick="dropdownToggle()" href="#">Home</a></li>
-                            <li class="nav-litem"><a class="font-color-light-1 tranx-3" onClick="dropdownToggle()" href="#projects">Projects</a></li>
-                            <li class="nav-litem"><a class="font-color-light-1 tranx-3" onClick="dropdownToggle()" href="#about">About Me</a></li>
-                            <li class="nav-litem"><a class="font-color-light-1 tranx-3" onClick="dropdownToggle()" href="#contact">Contact</a></li>
+                    <div class="side-menu-content tranx-3">
+                        <ul class="side-menu-items">
+                            <li class="nav-litem"><a class="font-color-light-1 tranx-3 menu-link" onClick="dropdownToggle()" href="#">Home</a></li>
+                            <li class="nav-litem"><a class="font-color-light-1 tranx-3 menu-link" onClick="dropdownToggle()" href="#projects">Projects</a></li>
+                            <li class="nav-litem"><a class="font-color-light-1 tranx-3 menu-link" onClick="dropdownToggle()" href="#aboutme">About Me</a></li>
+                            <li class="nav-litem"><a class="font-color-light-1 tranx-3 menu-link" onClick="dropdownToggle()" href="#contact">Contact</a></li>
                         </ul>
                         <div class="profile-image-small box-shadow-1">
                             <img class="img-full-width" src="./assets/images/profile.jpg" alt="" />
                         </div>
                             
-                        <div class="side-socials" id="side-socials">
-                            <a href="https://www.facebook.com/profile.php?id=100001540869064/" target="_blank" class="font-color-light-1 solcial-link tranx-3"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-                            <a href="https://github.com/zaids2641/" class="font-color-light-1 solcial-link tranx-3" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                            <a href="https://www.linkedin.com/in/felix-diaz-iii-819b3210a/" class="font-color-light-1 solcial-link tranx-3" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                        <div class="side-socials">
+                            <a href="https://www.facebook.com/profile.php?id=100001540869064/" target="_blank" class="font-color-light-1 solcial-link menu-link tranx-3"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                            <a href="https://github.com/zaids2641/" class="font-color-light-1 solcial-link menu-link tranx-3" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/in/felix-diaz-iii-819b3210a/" class="font-color-light-1 solcial-link menu-link tranx-3" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
                         </div>
                         <div class="hireme">
-                            <a href="#contact"><button class="tranx-3" type="button" id="hireme">Hire Me</button></a>
+                            <a href="#contact"><button class="hireme-btn tranx-3" type="button">Hire Me</button></a>
                         </div>
                     </div>                        
                 </div>
@@ -60,7 +61,7 @@
                     <div class="profile-image" >
                         <img class="img-full-width" src="./assets/images/profile.jpg" alt="" />
                     </div>
-                    <h1 class="font-color-light-1"><span>Felix</span><span>Diaz III</span></h1>
+                    <h1 class="font-color-light-1"><span>John</span><span>Doe</span></h1>
                     <p class="font-color-light-1">
                         Entry-Level Web Developer |<br/>
                         E-Commerce Virtual Assistant
@@ -78,13 +79,15 @@
         <section id="projects">
                 <div class="row">
                     <div class="visibility-hidden-3"></div>
-                    <!-- <div id="screen-size"></div> -->
+                    <div id="screen-size"></div>
                         <div class="content-header">
                             <h2>Projects</h2>
                         </div>
 
                         <div class="visibility-hidden-2"></div>
-
+                        
+                        
+                    <div class="container">
                         <div class="content">
                             <div class="grid-4">
                                     <div class="card box-shadow-1">
@@ -121,8 +124,111 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="card box-shadow-1">
+                                        <div class="card-content tranx-3">
+                                            <div class="card-img" style="background: url(./assets/images/image2.jpg); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+                                                
+                                                <div class="card-hover">
+                                                    <div class="card-info font-color-light-1">
+                                                        <h2 class="card-title text-center">Title</h2>
+                                                        <div class="card-buttons">
+                                                            <a type="button" class="font-color-light-1 tranx-3" href="#" target="_blank" >View</a>
+                                                            <a type="button" class="font-color-light-1 tranx-3" href="#" target="_blank" >Info</a>
+                                                            <a type="button" class="font-color-light-1 tranx-3" href="#" target="_blank" >GitHub</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card box-shadow-1">
+                                        <div class="card-content tranx-3">
+                                            <div class="card-img" style="background: url(./assets/images/image2.jpg); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+                                                
+                                                <div class="card-hover">
+                                                    <div class="card-info font-color-light-1">
+                                                        <h2 class="card-title text-center">Title</h2>
+                                                        <div class="card-buttons">
+                                                            <a type="button" class="font-color-light-1 tranx-3" href="#" target="_blank" >View</a>
+                                                            <a type="button" class="font-color-light-1 tranx-3" href="#" target="_blank" >Info</a>
+                                                            <a type="button" class="font-color-light-1 tranx-3" href="#" target="_blank" >GitHub</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card box-shadow-1">
+                                        <div class="card-content tranx-3">
+                                            <div class="card-img" style="background: url(./assets/images/image2.jpg); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+                                                
+                                                <div class="card-hover">
+                                                    <div class="card-info font-color-light-1">
+                                                        <h2 class="card-title text-center">Title</h2>
+                                                        <div class="card-buttons">
+                                                            <a type="button" class="font-color-light-1 tranx-3" href="#" target="_blank" >View</a>
+                                                            <a type="button" class="font-color-light-1 tranx-3" href="#" target="_blank" >Info</a>
+                                                            <a type="button" class="font-color-light-1 tranx-3" href="#" target="_blank" >GitHub</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card box-shadow-1">
+                                        <div class="card-content tranx-3">
+                                            <div class="card-img" style="background: url(./assets/images/image2.jpg); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+                                                
+                                                <div class="card-hover">
+                                                    <div class="card-info font-color-light-1">
+                                                        <h2 class="card-title text-center">Title</h2>
+                                                        <div class="card-buttons">
+                                                            <a type="button" class="font-color-light-1 tranx-3" href="#" target="_blank" >View</a>
+                                                            <a type="button" class="font-color-light-1 tranx-3" href="#" target="_blank" >Info</a>
+                                                            <a type="button" class="font-color-light-1 tranx-3" href="#" target="_blank" >GitHub</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card box-shadow-1">
+                                        <div class="card-content tranx-3">
+                                            <div class="card-img" style="background: url(./assets/images/image2.jpg); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+                                                
+                                                <div class="card-hover">
+                                                    <div class="card-info font-color-light-1">
+                                                        <h2 class="card-title text-center">Title</h2>
+                                                        <div class="card-buttons">
+                                                            <a type="button" class="font-color-light-1 tranx-3" href="#" target="_blank" >View</a>
+                                                            <a type="button" class="font-color-light-1 tranx-3" href="#" target="_blank" >Info</a>
+                                                            <a type="button" class="font-color-light-1 tranx-3" href="#" target="_blank" >GitHub</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card box-shadow-1">
+                                        <div class="card-content tranx-3">
+                                            <div class="card-img" style="background: url(./assets/images/image2.jpg); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+                                                
+                                                <div class="card-hover">
+                                                    <div class="card-info font-color-light-1">
+                                                        <h2 class="card-title text-center">Title</h2>
+                                                        <div class="card-buttons">
+                                                            <a type="button" class="font-color-light-1 tranx-3" href="#" target="_blank" >View</a>
+                                                            <a type="button" class="font-color-light-1 tranx-3" href="#" target="_blank" >Info</a>
+                                                            <a type="button" class="font-color-light-1 tranx-3" href="#" target="_blank" >GitHub</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                             </div>                        
                         </div>
+                    </div>
                 </div>
         </section>
 
@@ -176,7 +282,7 @@
                 </div>
         </section>
 
-        <section>
+        <section id="aboutme">
             <div class="row">
                 <div class="visibility-hidden-3"></div>
 
@@ -257,7 +363,7 @@
                                     <form name="form" class="box-shadow-1" id="contactForm" onSubmit="return validateForm()">
                                         <div class="font-color-dark-2 content-header">
                                             <h2>Let's get in touch</h2>
-                                            <small id="success"></small>
+                                            <!-- <small id="success"></small> -->
                                         </div>
                                         <div class="form-input">
                                             <label class="error tranx-3" id="name">Name</label>

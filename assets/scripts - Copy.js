@@ -12,33 +12,38 @@ var today = new Date()
 var year = today.getFullYear()
 document.getElementById('year').innerHTML = year;
 
-// Onscroll Effect Style
-$(document).ready(function(){
-  $(window).scroll(function(){
-  	var scroll = $(window).scrollTop();
-	  if (scroll > 300) {
-	    $(".navbar").css("background" , "rgb(253, 253, 253)");
-	    $(".navbar").css("box-shadow" , "0px 2px 12px -5px #000000");
-	    $(".brand-text").css("color" , "rgb(24, 24, 24)"); 
-	    $(".fa-bars").css("color" , "rgb(24, 24, 24)"); 
-	    $(".side-menu-content").css("background" , "#fff"); 
-	    $(".menu-link").css("color" , "rgb(24, 24, 24)"); 
-	    $(".hireme-btn ").css("color" , "rgb(24, 24, 24)");  
-	    $(".hireme-btn ").css("border" , "1px rgb(68, 68, 68) solid"); 
-	  }
-	  else{
-		  $(".navbar").css("background" , "none");
-	    $(".navbar").css("box-shadow" , "none");
-	    $(".brand-text").css("color" , "#fff");  
-	    $(".fa-bars").css("color" , "#fff"); 
-	    $(".side-menu-content").css("background" , "rgba(17, 17, 17,0.8)");  
-	    $(".side-menu-items").css("color" , "rgb(24, 24, 24)"); 	 
-	    $(".menu-link").css("color" , "#fff");  
-	    $(".hireme-btn").css("color" , "#fff"); 
-	    $(".hireme-btn").css("border" , "1px solid #fff"); 
-	  }
-  })
-})
+// Navbar Style
+var navbar = document.querySelector('nav');
+var navLink = document.getElementById('nav-items');
+var sideMenu = document.getElementById('side-menu-content');
+var sideMenuItems = document.getElementById('side-menu-items');
+var brand = document.getElementById('brand');
+var toggleMenu = document.getElementById('toggle-menu-button');
+var hireMe = document.getElementById('hireme');
+var sideSocials = document.getElementById('side-socials');
+
+window.onScroll = function() {
+
+if (window.pageYOffset > 200) {
+navbar.classList.add('scrolled')
+navLink.classList.add('navLinkScrollStyle')
+sideMenu.classList.add('sideMenuScrollStyle-1')
+sideMenuItems.classList.add('sideMenuItemsText')
+brand.classList.add('brandScrollStyle')
+toggleMenu.classList.add('toggle-button')
+hireMe.classList.add('hireMeStyle')
+sideSocials.classList.add('sideSocialsStyle')
+} else {
+navbar.classList.remove('scrolled')
+navLink.classList.remove('navLinkScrollStyle')
+sideMenu.classList.remove('sideMenuScrollStyle-1')
+sideMenuItems.classList.remove('sideMenuItemsText')
+brand.classList.remove('brandScrollStyle')
+toggleMenu.classList.remove('toggle-button')
+hireMe.classList.remove('hireMeStyle')
+sideSocials.classList.remove('sideSocialsStyle')
+}
+}
 
 
 function dropdownToggle() {
