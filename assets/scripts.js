@@ -1,13 +1,3 @@
-function displayWindowSize(){
-  var w = document.documentElement.clientWidth;
-  var h = document.documentElement.clientHeight;
-  
-  document.getElementById("screen-size").innerHTML = "Width: " + w + ", " + "Height: " + h;
-}
-  
-window.addEventListener("resize", displayWindowSize);
-displayWindowSize();
-
 var today = new Date()
 var year = today.getFullYear()
 document.getElementById('year').innerHTML = year;
